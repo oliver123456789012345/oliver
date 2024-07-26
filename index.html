@@ -1,44 +1,10 @@
-<!DOCTYPE html>
-<htma>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
+---
+layout: default
+title: Home
+---
 
-  <div id="calculator">
-    <input id="display">
-    <div id="keys">
-      <button onclick="appendToDisplay('+')"class="operator-btn">+</button>
-      <button onclick="appendToDisplay('7')">7</button>
-      <button onclick="appendToDisplay('8')">8</button>
-      <button onclick="appendToDisplay('9')">9</button>
-      <button onclick="appendToDisplay('-')"class="operator-btn">-</button>
-      <button onclick="appendToDisplay('4')">4</button>
-      <button onclick="appendToDisplay('5')">5</button>
-      <button onclick="appendToDisplay('6')">6</button>
-      <button onclick="appendToDisplay('*')"class="operator-btn">*</button>
-      <button onclick="appendToDisplay('1')">1</button>
-      <button onclick="appendToDisplay('2')">2</button>
-      <button onclick="appendToDisplay('3')">3</button>
-      <button onclick="appendToDisplay('/')"class="operator-btn">/</button>
-      <button onclick="appendToDisplay('0')">0</button>
-      <button onclick="appendToDisplay('.')">.</button>
-      <button onclick="calculate()">=</button>
-      <button onclick="ClearDisplay()" class="operator-btn">C</button>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-
-</html>
-
-
-<style> 
-body{
+<style>
+  body{
   margin: 0;
   display: flex;
   justify-content: center;
@@ -88,10 +54,35 @@ button:active{
 .operator-btn{
   background-color:  hsl(39, 100%, 50%);
 }
-</style> 
+</style>
+
+  <div id="calculator">
+    <input id="display">
+    <div id="keys">
+      <button onclick="appendToDisplay('+')"class="operator-btn">+</button>
+      <button onclick="appendToDisplay('7')">7</button>
+      <button onclick="appendToDisplay('8')">8</button>
+      <button onclick="appendToDisplay('9')">9</button>
+      <button onclick="appendToDisplay('-')"class="operator-btn">-</button>
+      <button onclick="appendToDisplay('4')">4</button>
+      <button onclick="appendToDisplay('5')">5</button>
+      <button onclick="appendToDisplay('6')">6</button>
+      <button onclick="appendToDisplay('*')"class="operator-btn">*</button>
+      <button onclick="appendToDisplay('1')">1</button>
+      <button onclick="appendToDisplay('2')">2</button>
+      <button onclick="appendToDisplay('3')">3</button>
+      <button onclick="appendToDisplay('/')"class="operator-btn">/</button>
+      <button onclick="appendToDisplay('0')">0</button>
+      <button onclick="appendToDisplay('.')">.</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="ClearDisplay()" class="operator-btn">C</button>
+    </div>
+  </div>
 
   <script>
-  const display = document.getElementById('display');
+    // calculator program and stuff
+
+const display = document.getElementById('display');
 
 function appendToDisplay(input){
   display.value += input;
